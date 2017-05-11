@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f5006afd</color>
+    <color name="colorPrimaryDark">#f5006afd</color>
+    <color name="colorAccent">#e20099ff</color>
+    <color name="colorSlidingMenuMain">#cd585b59</color>
+    <color name="colorToolbar">#f5006afd</color>
+
+</resources>

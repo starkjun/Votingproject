@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfefeded"
+    tools:context="com.example.yongjunxiao.voting.Activity.MessageShow">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <Button
+        android:id="@+id/create_vote"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/voteicon" />
+
+    <Button
+        android:id="@+id/group_info"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/create_vote"
+        android:background="@drawable/member" />
+
+    <ListView
+        android:id="@+id/message_show_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:divider="#fff"
+        android:dividerHeight="0dp"></ListView>
+
+</RelativeLayout>

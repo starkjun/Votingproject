@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_group_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yongjunxiao.voting.Activity.GroupList">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <Button
+        android:id="@+id/add_group_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/addgroup"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar">
+
+        <TextView
+            android:id="@+id/group_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="群组(8)"
+            android:textColor="#1fa159"
+            android:textSize="17sp" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/group_number"
+            android:layout_marginTop="20dp">
+
+        </ListView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

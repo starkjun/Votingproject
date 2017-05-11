@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_begin_voting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yongjunxiao.voting.Activity.BeginVoting">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <Button
+        android:id="@+id/modify_vote_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="#fff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="标题"
+                android:textColor="#1fa159"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/vote_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="是否去旅游"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/vote_title"
+                android:layout_marginTop="10dp"
+                android:background="#b3b0b0" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vote_title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="详细描述"
+                android:textColor="#1fa159"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/vote_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="是否去旅游"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/vote_content"
+                android:layout_marginTop="10dp"
+                android:background="#b3b0b0" />
+
+            <com.example.yongjunxiao.voting.Utils.ListviewForScrollerview
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vote_content"
+                android:layout_marginTop="25dp">
+
+            </com.example.yongjunxiao.voting.Utils.ListviewForScrollerview>
+
+            <TextView
+                android:id="@+id/start_deadline_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listview"
+                android:layout_centerHorizontal="true"
+                android:text="2017-4-25" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/shape"
+                android:text="提交"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

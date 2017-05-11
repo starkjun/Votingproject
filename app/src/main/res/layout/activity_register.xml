@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yongjunxiao.voting.Activity.RegisterActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="请输入昵称"
+            android:textColor="#1fa159"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_nickname"
+            android:layout_marginTop="10dp"
+            android:background="#0ed2d0d0"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nick_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="请输入账号"
+            android:textColor="#1fa159"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_account"
+            android:layout_marginTop="10dp"
+            android:background="#0ed2d0d0"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_paswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="请输入密码"
+            android:textColor="#1fa159"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_paswd"
+            android:layout_marginTop="10dp"
+            android:background="#0ed2d0d0"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_confirm_paswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="请再次输入密码"
+            android:textColor="#1fa159"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_confirm_paswd"
+            android:layout_marginTop="10dp"
+            android:background="#0ed2d0d0"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/confirm_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape"
+            android:text="注册"
+            android:textColor="#ffff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfefeded"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#e33fa736">
+
+            <TextView
+                android:id="@+id/vote_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="标题"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1">
+
+            <TextView
+                android:id="@+id/vote_content"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:gravity="center"
+                android:text="这是投票的详细描述"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/start_deadline_date"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/vote_content"
+                android:background="#dfe6e5e5"
+                android:gravity="center"
+                android:text="起始截止日期"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

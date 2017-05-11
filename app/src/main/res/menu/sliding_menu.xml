@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/gender"
+            android:title="gender"
+            android:icon="@drawable/gender"
+            />
+        <item
+            android:id="@+id/area"
+            android:title="area"
+            android:icon="@drawable/area"/>
+
+    </group>
+    <group
+        android:id="@+id/group2">
+
+        <item
+            android:id="@+id/account_icon"
+            android:title="帐号信息"
+            android:icon="@drawable/account_icon"/>
+
+        <item
+            android:id="@+id/identified"
+            android:title="实名认证"
+            android:icon="@drawable/real_confirm"
+            />
+        <item
+            android:id="@+id/vote_record"
+            android:title="投票记录"
+            android:icon="@drawable/record"/>
+        <item
+            android:id="@+id/reset_psw"
+            android:title="重置密码"
+            android:icon="@drawable/reset_password"/>
+    </group>
+
+
+</menu>
